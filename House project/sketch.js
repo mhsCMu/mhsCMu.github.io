@@ -1,6 +1,6 @@
   //You Must Change TWO Variables to Scale the House
-var houseWidth = 350;
-var houseHeight = 250;
+var houseWidth = 250;
+var houseHeight = 150;
 
 
 function setup() {
