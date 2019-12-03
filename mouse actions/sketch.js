@@ -9,14 +9,16 @@ function setup() {
 function draw() {
   // put drawing code here
   //background(255,255,255,10);
-
+  //To see other objects, simply delete the double slash
   //Continuesly check to see if the mouse button is pressed
   if(mouseIsPressed) {
     //Draw an ellipse at the current mouse location
     //Use two new variables --> mouseX and mouseY
     //ellipse(mouseX, mouseY,size);
+    //Complex Shape
     triangle(mouseX-20, mouseY-10, mouseX-10, mouseY+5, mouseX, mouseY-10, size)
     triangle(mouseX, mouseY, mouseX-10, mouseY-15, mouseX-20, mouseY, size);
+    //Random Lines
     //line(random(0,1000),random(0,800),mouseX,mouseY);
   }
 
