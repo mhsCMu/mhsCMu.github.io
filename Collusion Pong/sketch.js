@@ -174,3 +174,4 @@ function difficulty(){
     ySpeed = ySpeed * 1.0005;
   }
 }
+
