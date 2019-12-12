@@ -2,8 +2,8 @@ var ballX = 400;
 var ballY = 300;
 var ballSize = 25;
 
-var xSpeed = 5;
-var ySpeed = 5;
+var xSpeed = 7;
+var ySpeed = 7;
 
 var player1X = 10;
 var player1Y = 250;
