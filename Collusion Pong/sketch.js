@@ -20,6 +20,7 @@ var player1Score = 0;
 var player2Score = 0;
 
 var menu = 0;
+let timer = 4;
 
 function setup() {
   // put setup code here
@@ -50,15 +51,23 @@ function draw() {
     background(0);
     fill(255);
     rect(400,0,5,600);
-
-    moveBall();
-    bounce();
-    drawPlayers();
     drawBall();
-    hitPaddle();
-    movePaddle();
-    score();
-    difficulty();
+
+    if (frameCount % 60 == 0 && timer > 0) {
+      timer --;
+      fill(255);
+      textSize(100);
+      text(timer, 300, 300);
+  }
+    if (timer == 0) {
+      moveBall();
+      bounce();
+      drawPlayers();
+      hitPaddle();
+      movePaddle();
+      score();
+      difficulty();
+    }
   }
 }
 
@@ -174,4 +183,3 @@ function difficulty(){
     ySpeed = ySpeed * 1.0005;
   }
 }
-
